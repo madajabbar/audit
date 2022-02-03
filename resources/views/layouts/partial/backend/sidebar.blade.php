@@ -18,7 +18,7 @@
                    <a href="javascript:void(0);" class="waves-effect "><i class="mdi mdi-invert-colors"></i> <span>
                            Risk Assessment</span> <span class="menu-arrow"></span></a>
                    <ul class="list-unstyled">
-                       <li><a href="#">Assign Assessment</a></li>
+                       <li><a href="{{route('backend.assign-assessment.index')}}">Assign Assessment</a></li>
                        <li><a href="#">Assessment</a></li>
                        <li><a href="#">Review PKA</a></li>
                        <li><a href="#">Review Wakil</a></li>

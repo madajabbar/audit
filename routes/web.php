@@ -28,11 +28,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group([
     'prefix' => 'admin',
     'as' => 'backend.',
-    'middleware' => 'auth',
+    // 'middleware' => 'auth',
  ], function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::resource('timeline', App\Http\Controllers\Backend\TimelineController::class);
+    Route::resource('assign-assessment',App\Http\Controllers\Admin\RiskAssessment\AssignAssessmentController::class);
 
     //POST ROUTE
     Route::group([
