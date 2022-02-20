@@ -40,8 +40,9 @@
                   <th>Periode</th>
                   <th>Auditee</th>
                   <th>Jenis Assessment</th>
-                  <th>PKA</th>
                   <th>Auditor</th>
+                  <th>PKA</th>
+                  <th>Wakil</th>
                   <th>Action</th>
                </tr>
             </thead>
@@ -106,24 +107,28 @@
                 orderable: false
                 },
                 {
-                    data: 'name',
+                    data: 'periode',
                     orderable: true
                 },
                 {
-                    data: 'position',
+                    data: 'auditee',
                     orderable: true
                 },
                 {
-                    data: 'score',
+                    data: 'jenis_assessment',
                     orderable: true
                 },
 
                 {
-                    data: 'team',
+                    data: 'auditor',
                     orderable: true
                 },
                 {
-                    data: 'picture',
+                    data: 'pka',
+                    orderable: true
+                },
+                {
+                    data: 'wakil',
                     orderable: true
                 },
                 {

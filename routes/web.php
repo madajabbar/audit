@@ -34,6 +34,11 @@ Route::group([
     Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::resource('timeline', App\Http\Controllers\Backend\TimelineController::class);
     Route::resource('assign-assessment',App\Http\Controllers\Admin\RiskAssessment\AssignAssessmentController::class);
+    Route::resource('assessment',App\Http\Controllers\Admin\RiskAssessment\AssessmentController::class);
+    Route::resource('review-pka',App\Http\Controllers\Admin\RiskAssessment\ReviewPKAController::class);
+    Route::resource('rat',App\Http\Controllers\Admin\ManajemenPerencanaan\RATController::class);
+    Route::resource('rap',App\Http\Controllers\Admin\ManajemenPerencanaan\RAPController::class);
+    Route::resource('perencanaan-audit',App\Http\Controllers\Admin\ManajemenAudit\PerencanaanAuditController::class);
 
     //POST ROUTE
     Route::group([

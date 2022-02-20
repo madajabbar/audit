@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin\RiskAssessment;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AssignAssessmentController extends Controller
+class ReviewPKAController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,7 @@ class AssignAssessmentController extends Controller
         $data['title'] = 'Risk Assessment';
         $data['subtitle'] = 'Daftar Perencanaan Risk Assessment';
         // $data['team'] = LfsTeam::all();
-        return view('backend.risk_assessment.assign_assessment.index', $data);
+        return view('backend.risk_assessment.review_pka.index', $data);
     }
 
     /**
@@ -27,9 +27,7 @@ class AssignAssessmentController extends Controller
      */
     public function create()
     {
-        $data['title'] = 'Risk Assessment';
-        $data['subtitle'] = 'Daftar Perencanaan Risk Assessment';
-        return view('backend.risk_assessment.assign_assessment.__form', $data);
+        //
     }
 
     /**

@@ -19,8 +19,8 @@
                            Risk Assessment</span> <span class="menu-arrow"></span></a>
                    <ul class="list-unstyled">
                        <li><a href="{{route('backend.assign-assessment.index')}}">Assign Assessment</a></li>
-                       <li><a href="#">Assessment</a></li>
-                       <li><a href="#">Review PKA</a></li>
+                       <li><a href="{{route('backend.assessment.index')}}">Assessment</a></li>
+                       <li><a href="{{route('backend.review-pka.index')}}">Review PKA</a></li>
                        <li><a href="#">Review Wakil</a></li>
                        <li><a href="#">Pelaporan</a></li>
                        <li><a href="#">Risk Profile</a></li>
@@ -32,8 +32,8 @@
                    <a href="javascript:void(0);" class="waves-effect "><i class="mdi mdi-invert-colors"></i> <span>
                            Manajemen Perencanaan</span> <span class="menu-arrow"></span></a>
                    <ul class="list-unstyled">
-                       <li><a href="#">RAT</a></li>
-                       <li><a href="#">RAP</a></li>
+                       <li><a href="{{route('backend.rat.index')}}">RAT</a></li>
+                       <li><a href="{{route('backend.rap.index')}}">RAP</a></li>
                        <li><a href="#">Pelaporan Perencanaan</a></li>
                    </ul>
                </li>
@@ -41,7 +41,7 @@
                    <a href="javascript:void(0);" class="waves-effect "><i class="mdi mdi-invert-colors"></i> <span>
                            Manajemen Audit</span> <span class="menu-arrow"></span></a>
                    <ul class="list-unstyled">
-                       <li><a href="#">Persiapan Audit</a></li>
+                       <li><a href="{{route('backend.perencanaan-audit.index')}}">Persiapan Audit</a></li>
                        <li><a href="#">Audit Pendalaman</a></li>
                        <li><a href="#">Pelaksanaan Audit</a></li>
                        <li><a href="#">Pelaporan Audit</a></li>

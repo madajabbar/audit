@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin\RiskAssessment;
+namespace App\Http\Controllers\Admin\ManajemenPerencanaan;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AssignAssessmentController extends Controller
+class RAPController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,10 @@ class AssignAssessmentController extends Controller
      */
     public function index()
     {
-        $data['title'] = 'Risk Assessment';
-        $data['subtitle'] = 'Daftar Perencanaan Risk Assessment';
+        $data['title'] = 'Manajemen Perencanaan';
+        $data['subtitle'] = 'List RAP';
         // $data['team'] = LfsTeam::all();
-        return view('backend.risk_assessment.assign_assessment.index', $data);
+        return view('backend.manajemen_perencanaan.RAP.index', $data);
     }
 
     /**
@@ -27,9 +27,7 @@ class AssignAssessmentController extends Controller
      */
     public function create()
     {
-        $data['title'] = 'Risk Assessment';
-        $data['subtitle'] = 'Daftar Perencanaan Risk Assessment';
-        return view('backend.risk_assessment.assign_assessment.__form', $data);
+        //
     }
 
     /**

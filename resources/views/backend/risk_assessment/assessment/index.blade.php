@@ -33,7 +33,7 @@
    <div class="col-12">
       <div class="card-box table-responsive">
           <table id="datatable" class="table table-bordered  m-t-30">
-              <h4>{{$subtitle}}</h3>
+              <h4>{{$subtitle}}</h4>
             <thead>
                <tr>
                   <th width="5%">No</th>
@@ -42,6 +42,7 @@
                   <th>Jenis Assessment</th>
                   <th>PKA</th>
                   <th>Auditor</th>
+                  <th>Date Modified</th>
                   <th>Action</th>
                </tr>
             </thead>
@@ -50,7 +51,7 @@
          </table>
       </div>
    </div>
-   @include('backend.risk_assessment.assign_assessment.__form')
+   @include('backend.risk_assessment.assessment.__form')
 </div>
 @endsection
 
@@ -106,24 +107,28 @@
                 orderable: false
                 },
                 {
-                    data: 'name',
+                    data: 'periode',
                     orderable: true
                 },
                 {
-                    data: 'position',
+                    data: 'auditee',
                     orderable: true
                 },
                 {
-                    data: 'score',
+                    data: 'jenis_assessment',
                     orderable: true
                 },
 
                 {
-                    data: 'team',
+                    data: 'pka',
                     orderable: true
                 },
                 {
-                    data: 'picture',
+                    data: 'auditor',
+                    orderable: true
+                },
+                {
+                    data: 'date_modification',
                     orderable: true
                 },
                 {
@@ -135,11 +140,11 @@
             order: [[0, 'desc']]
         })
     function createItem() {
-      setForm('create', 'POST', 'Tambah Perencanaan Risk Assessment', true);
+      setForm('create', 'POST', 'Add Team', true);
     }
 
     function editItem(id) {
-      setForm('update', 'PUT', 'Edit Perencanaan Risk Assessment', true)
+      setForm('update', 'PUT', 'Edit Category', true)
       editData(id)
       // Toast.fire({
       //          icon: 'success',

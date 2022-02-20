@@ -10,7 +10,7 @@
 
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
 
-    <title>HIMASTER-CMS</title>
+    <title>Audit</title>
 
     <!--Morris Chart CSS -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/morris/morris.css') }}">
